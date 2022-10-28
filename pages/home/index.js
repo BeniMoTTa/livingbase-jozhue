@@ -41,7 +41,7 @@ async function createPost(post){
         anchor.addEventListener("click", (e)=>{
             divLoading.classList.toggle("loading-show")
             setTimeout(() => {
-                window.location.href = './../post/index.html'
+                window.location.href = './pages/post/index.html'
             }, 4000);
             localStorage.setItem("currentId", element.id)
         })
@@ -140,13 +140,14 @@ async function buttonsNav(){
   const found = await observerFunc()
   let botaozinho = document.querySelectorAll(".btn-nav")
   botaozinho.forEach(element => {
-    if(localStorageBtnChecked === element){
-      element.classlist.focus =  true
-    }
+    
       element.addEventListener("click", (event)=>{
          const filter = found.filter(element =>{
           if(event.target.innerText == "Todos"){
             return element
+          }
+          else if(localStorageBtnChecked == element){
+            element
           }
           else{
             return element.category === event.target.innerText

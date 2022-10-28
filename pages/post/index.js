@@ -48,7 +48,7 @@ function makeButtons(){
         buttons.addEventListener("click", (event)=>{
             loading.classList.toggle("loading-show")
             setTimeout(() => {
-                window.location.href = './../home/index.html'
+                window.location.href = './../../index.html'
             }, 4000);
             localStorage.setItem("buttonClicker", element)
        
@@ -67,7 +67,7 @@ makeButtons()
 buttonBackHome.addEventListener("click", (e)=>{
     loading.classList.toggle("loading-show")
     setTimeout(() => {
-        window.location.href = './../home/index.html'
+        window.location.href = './../../index.html'
     }, 4000);
 })
 
