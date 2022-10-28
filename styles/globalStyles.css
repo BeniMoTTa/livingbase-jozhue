@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,4 +22,16 @@
   --font-size-2: 1.75rem;
   --font-size-3: 1.25rem;
   --font-size-4: 1rem;
+  --font-family:'Inter', sans-serif;
+}
+button{
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  font-family: var(--font-family);
 }

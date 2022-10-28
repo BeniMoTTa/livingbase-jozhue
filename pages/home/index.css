@@ -1,1 +1,238 @@
 /* Desenvolva seu estilo aqui */
+html{
+    scroll-behavior: smooth;
+    transition: 2s ease;
+}
+header{
+    margin: auto;
+    padding-top: 40px;
+}
+.header-area-text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    margin-right: 170px;
+}
+.align-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.title-site{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.spend-site{
+    width: 18px;
+    height: 15px;
+}
+.direct-header{
+    display: flex;
+    margin: auto;
+    width: 1000px;
+    height: 300px;
+}
+.title-header{
+    line-height: 45px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.text-header{
+    line-height: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+.span-header{
+    font-size: 13px;
+    font-weight: 600;
+}
+.green-text{
+    color: var(--color-brand-100);
+}
+.header-img{
+    height: 100%;
+}
+
+
+
+.area-nav{
+    margin: 60px auto;
+    width: 1000px;
+}
+.btn-nav{
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 12px;
+    border: none;
+    margin-right: 24px;
+    font-weight: 600;
+    color: var(--color-grey-200);
+}
+.btn-nav:hover{
+    color: var(--color-grey-500);
+    background-color: var(--color-brand-100);
+}
+.btn-nav:focus{
+    color: var(--color-grey-500);
+    background-color: var(--color-brand-100);
+}
+/* .btn-change{
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 12px;
+    border: none;
+    margin-right: 24px;
+    font-weight: 600;
+    color: var(--color-grey-500);
+    background-color: var(--color-brand-100);
+} */
+
+.container-general{
+    margin: 0 auto;
+    width: 1000px;
+}
+.post{
+    width: 435px;
+    margin-right: 65px;
+    margin-bottom: 60px;
+    height: 400px;
+    transition: 2s ease-in-out;
+    
+}
+.post:hover{
+    border: 1px solid var(--color-grey-100);
+    
+}
+.img-post{
+    width: 100%;
+    height: 180px;
+}
+
+.text-post{
+    margin-top: 10px;
+}
+
+.text-post h4{
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.text-post p{
+    margin-top: 10px;
+    line-height: 25px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.green-button-post{
+    
+    border: none;
+    background-color: transparent;
+    color: var(--color-brand-100);
+    font-weight: 600;
+}
+.list-posts{
+    display: flex;
+    flex-wrap: wrap;
+}
+.green-button-post:hover{
+    text-decoration: underline;
+
+}
+footer{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-grey-100);
+}
+.footer-area{
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-info-site{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+}
+.footer-info-site h2{
+    font-size: 22px;
+    color: var(--color-grey-700);
+}
+.text-footer-info{
+    width: 450px;
+
+}
+.text-footer-info p{
+    font-size: 13px;
+    color: var(--color-grey-300);
+}
+.btn-backTop{
+    height: 32px;
+    width: 175px;
+    border-radius: 25px;
+    background-color: var(--color-grey-200);
+    color: var(--color-grey-700);
+    font-weight: 600;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+.btn-backTop:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.loading-wrapper{
+    display: none;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 37, 41, 0.6);;
+    align-items: center;
+}
+.loading-show{
+    display: flex;
+}
+.loadingSpan{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    display: block;
+    border-radius: 60%;
+    border: 7px solid var(--color-grey-400);
+    border-top: 7px solid var(--color-brand-200);
+    animation: loading 1.5s ease infinite;
+}
+@keyframes loading {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.text-loading{
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: var(--color-grey-700);
+}
